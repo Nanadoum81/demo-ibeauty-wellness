@@ -256,3 +256,90 @@ footer .fine{border-top:1px solid rgba(255,255,255,.14);margin-top:30px;padding-
   .hero .hero-media img{object-position:32% 30%}
   .page-hero .hero-shade{background:linear-gradient(180deg,rgba(19,24,73,.42) 0%,rgba(29,36,99,.55) 45%,rgba(19,24,73,.85) 100%)}
 }
+
+/* ===== LUXURY PASS 2026-11-16 — editorial, Three-Planes, ivory & air ===== */
+section{padding:140px 0}
+.section-head{margin-bottom:64px}
+.section-head p{font-size:18.5px;line-height:1.7}
+.eyebrow{letter-spacing:.42em}
+
+/* Home hero: giant outlined word behind, matted photo in front */
+.home .hero{background:var(--ivory);color:var(--ink);overflow:hidden}
+.hero-word{
+  position:absolute;top:6px;left:50%;transform:translateX(-50%);z-index:0;
+  font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;
+  font-size:clamp(120px,21vw,290px);line-height:1;white-space:nowrap;pointer-events:none;
+  color:rgba(174,136,52,.07);
+  -webkit-text-stroke:1px rgba(174,136,52,.38);
+}
+.hero-grid{
+  position:relative;z-index:1;max-width:1240px;margin:0 auto;
+  padding:96px 24px 104px;display:grid;grid-template-columns:1.02fr .98fr;gap:64px;align-items:center;
+}
+.hero-copy{display:flex;flex-direction:column;align-items:center;gap:26px}
+.home .hero h1{color:var(--royal-deep);font-size:clamp(52px,6.4vw,96px);line-height:1.03}
+.home .hero h1 em{color:var(--gold-deep)}
+.home .hero-sub{color:#4A4E6B;font-size:20.5px;max-width:520px}
+.home .pill{
+  background:var(--paper);border:1px solid var(--gold);color:var(--royal-deep);
+  box-shadow:0 10px 26px rgba(29,36,99,.08);backdrop-filter:none;
+}
+.home .hero-cta{transform:none;margin-top:4px}
+.btn-line{
+  display:inline-block;border:1.5px solid var(--royal-deep);color:var(--royal-deep);
+  font-weight:600;letter-spacing:.12em;padding:17px 38px;border-radius:999px;
+  font-size:15px;text-transform:uppercase;background:transparent;transition:background .15s ease,transform .15s ease;
+}
+.btn-line:hover{background:rgba(29,36,99,.05);transform:translateY(-1px)}
+.hero-photo{
+  position:relative;background:var(--paper);border:1px solid var(--gold);
+  padding:16px 16px 0;box-shadow:0 34px 70px rgba(29,36,99,.16);
+}
+.hero-photo::after{
+  content:"";position:absolute;inset:0;transform:translate(18px,18px);
+  border:1px solid rgba(206,165,75,.55);z-index:-1;
+}
+.hero-photo img{width:100%;height:620px;object-fit:cover;object-position:center 26%}
+.hero-photo figcaption{
+  font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-deep);
+  font-weight:600;padding:15px 6px 17px;
+}
+
+/* Trust strip goes ivory with hairlines */
+.trust{background:var(--ivory);color:var(--ink);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:30px 0}
+.trust b{color:var(--gold-deep)}
+
+/* Service card numbers */
+.card-num{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:20px;color:var(--gold-deep);letter-spacing:.08em}
+.card img{height:520px}
+.card-body{padding:44px 34px 50px}
+
+/* Calm band — full-bleed photo, one line */
+.calm-band{position:relative;overflow:hidden;min-height:560px;display:flex;align-items:center;justify-content:center}
+.calm-band>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 32%}
+.calm-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(19,24,73,.52),rgba(19,24,73,.68))}
+.calm-in{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;gap:26px;padding:90px 24px}
+.calm-in .eyebrow{color:var(--gold-pale)}
+.calm-quote{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(36px,5.2vw,62px);line-height:1.15;color:#fff;max-width:16ch}
+.calm-quote em{font-style:italic;color:var(--gold-pale)}
+
+/* Inner page heroes: outlined word behind the shade */
+.page-hero .hero-word{
+  top:50%;transform:translate(-50%,-50%);z-index:1;
+  font-size:clamp(110px,17vw,230px);color:rgba(255,255,255,.05);
+  -webkit-text-stroke:1px rgba(255,255,255,.30);
+}
+
+/* Services page photos get the matted keyline frame */
+.block-photo{background:var(--paper);border:1px solid var(--gold);padding:14px 14px 14px;box-shadow:0 30px 60px rgba(29,36,99,.13)}
+.block img{border-radius:0;box-shadow:none;height:512px}
+
+@media (max-width:900px){
+  section{padding:84px 0}
+  .hero-grid{grid-template-columns:1fr;gap:44px;padding:64px 20px 72px}
+  .hero-photo img{height:430px}
+  .hero-word{font-size:clamp(96px,26vw,150px);top:2px}
+  .card img{height:400px}
+  .calm-band{min-height:460px}
+  .block img{height:320px}
+}
