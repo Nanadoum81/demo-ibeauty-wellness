@@ -273,13 +273,13 @@ section{padding:140px 0}
   -webkit-text-stroke:1px rgba(174,136,52,.38);
 }
 .hero-grid{
-  position:relative;z-index:1;max-width:1240px;margin:0 auto;
-  padding:96px 24px 104px;display:grid;grid-template-columns:1.02fr .98fr;gap:64px;align-items:center;
+  position:relative;z-index:1;max-width:880px;margin:0 auto;
+  padding:110px 24px 118px;display:block;
 }
 .hero-copy{display:flex;flex-direction:column;align-items:center;gap:26px}
 .home .hero h1{color:var(--royal-deep);font-size:clamp(52px,6.4vw,96px);line-height:1.03}
 .home .hero h1 em{color:var(--gold-deep)}
-.home .hero-sub{color:#4A4E6B;font-size:20.5px;max-width:520px}
+.home .hero-sub{color:#4A4E6B;font-size:20.5px;max-width:640px}
 .home .pill{
   background:var(--paper);border:1px solid var(--gold);color:var(--royal-deep);
   box-shadow:0 10px 26px rgba(29,36,99,.08);backdrop-filter:none;
