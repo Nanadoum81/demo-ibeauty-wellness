@@ -434,3 +434,12 @@ a.card:hover .from-link{border-bottom-color:var(--gold)}
 @media (max-width:860px){
   .home .hero-word{top:30%;font-size:clamp(96px,26vw,150px)}
 }
+
+/* Services marquee — rotating banner under the hero (Emmanuel, 2026-11-17) */
+.svc-marquee{background:var(--royal-deep);border-bottom:2px solid var(--gold);overflow:hidden;padding:16px 0;position:relative;z-index:1}
+.svc-track{display:flex;width:max-content;align-items:center;gap:34px;white-space:nowrap;animation:svc-scroll 36s linear infinite}
+.svc-marquee:hover .svc-track{animation-play-state:paused}
+.svc-track span{color:#F4EFE3;font-size:15px;letter-spacing:.22em;text-transform:uppercase}
+.svc-track i{color:var(--gold);font-style:normal;font-size:10px}
+@keyframes svc-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion: reduce){.svc-track{animation:none;flex-wrap:wrap;justify-content:center;width:auto;white-space:normal}}
