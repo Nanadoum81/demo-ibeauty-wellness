@@ -405,7 +405,7 @@ a.card:hover .from-link{border-bottom-color:var(--gold)}
 /* ===== VARIANT A — full-bleed photo hero ===== */
 .home .hero{background:var(--royal-deep)}
 .home .hero-shade{background:linear-gradient(180deg,rgba(19,24,73,.66) 0%,rgba(29,36,99,.52) 46%,rgba(19,24,73,.90) 100%)}
-.home .hero-word{color:rgba(255,255,255,.05);-webkit-text-stroke:1px rgba(255,255,255,.34);z-index:1}
+.home .hero-word{color:rgba(255,255,255,.05);-webkit-text-stroke:1px rgba(255,255,255,.38);z-index:1;top:50%;transform:translate(-50%,-54%);font-size:clamp(170px,25vw,360px)}
 .home .hero-grid{z-index:2;padding:130px 24px 138px}
 .home .hero .eyebrow{color:var(--gold-pale)}
 .home .hero h1{color:#fff}
@@ -414,3 +414,8 @@ a.card:hover .from-link{border-bottom-color:var(--gold)}
 .home .pill{background:rgba(19,24,73,.48);border-color:rgba(206,165,75,.75);color:#fff;box-shadow:none}
 .home .btn-line{border-color:#fff;color:#fff}
 .home .btn-line:hover{background:rgba(255,255,255,.14)}
+
+/* Hero ghost word layered into the headline (2026-11-16, Emmanuel) */
+@media (max-width:860px){
+  .home .hero-word{top:50%;transform:translate(-50%,-54%);font-size:clamp(120px,30vw,190px)}
+}
