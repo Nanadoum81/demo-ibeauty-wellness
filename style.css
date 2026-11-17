@@ -426,3 +426,11 @@ a.card:hover .from-link{border-bottom-color:var(--gold)}
 .home .hero .sub{margin-top:30px;line-height:1.65}
 .home .hero .pill{margin-top:30px}
 .home .hero .cta-row{margin-top:36px}
+
+/* PREMIUM HERO PASS (2026-11-16, Emmanuel: ghost word tamed, photo breathes, stack tightened) */
+.home .hero-media::after{background:linear-gradient(180deg,rgba(23,18,54,.40),rgba(23,18,54,.26) 46%,rgba(23,18,54,.50))}
+.home .hero-word{top:33%;transform:translate(-50%,-50%);font-size:clamp(110px,14.5vw,225px);color:rgba(255,255,255,.028);-webkit-text-stroke:1px rgba(255,255,255,.20)}
+.home .hero h1{line-height:1.12;font-size:clamp(48px,5.7vw,82px)}
+@media (max-width:860px){
+  .home .hero-word{top:30%;font-size:clamp(96px,26vw,150px)}
+}
