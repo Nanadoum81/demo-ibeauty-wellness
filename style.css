@@ -447,3 +447,16 @@ a.card:hover .from-link{border-bottom-color:var(--gold)}
 .svc-track i{color:var(--gold);font-style:normal;font-size:10px}
 @keyframes svc-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @media (prefers-reduced-motion: reduce){.svc-track{animation:none;flex-wrap:wrap;justify-content:center;width:auto;white-space:normal}}
+
+/* ===== Mobile header 2026-11-17 (Emmanuel): logo centered, hamburger on the left ===== */
+.menu-btn{display:none}
+@media (max-width:900px){
+  .header-in{display:grid;grid-template-columns:44px 1fr 44px;align-items:center;padding:10px 16px}
+  .menu-btn{display:flex;flex-direction:column;justify-content:center;gap:5px;width:44px;height:44px;padding:11px;background:none;border:0;cursor:pointer;grid-column:1;justify-self:start}
+  .menu-btn span{display:block;height:2px;border-radius:2px;background:var(--royal-deep)}
+  .brand{grid-column:2;justify-self:center}
+  .brand img{height:50px}
+  header.menu-open nav{display:flex;flex-direction:column;gap:0;position:absolute;top:100%;left:0;right:0;background:rgba(250,246,239,.98);border-bottom:1px solid var(--gold);box-shadow:0 18px 30px rgba(29,36,99,.12);padding:6px 24px 14px;z-index:60}
+  header.menu-open nav a{padding:13px 2px;border-bottom:1px solid var(--line)}
+  header.menu-open nav a:last-child{border-bottom:0}
+}
