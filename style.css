@@ -419,3 +419,10 @@ a.card:hover .from-link{border-bottom-color:var(--gold)}
 @media (max-width:860px){
   .home .hero-word{top:50%;transform:translate(-50%,-54%);font-size:clamp(120px,30vw,190px)}
 }
+
+/* Hero stack spacing — headings follow one under another, nothing squished (2026-11-16, Emmanuel) */
+.home .hero h1{line-height:1.18}
+.home .eyebrow{margin-bottom:26px}
+.home .hero .sub{margin-top:30px;line-height:1.65}
+.home .hero .pill{margin-top:30px}
+.home .hero .cta-row{margin-top:36px}
